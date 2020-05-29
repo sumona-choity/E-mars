@@ -1,6 +1,60 @@
 <template>
 	<div>
-		<div class="content"> 
+		<div class="row right_row1">
+            <div class="top_div">
+                <div class="top_left">
+                    <p class="task_p">Products</p>
+                </div>
+                
+                <div class="top_right">
+                    <div class="search_div">
+                        <!-- <Input style="width:300px;" size="large" search v-model="search" placeholder="Search..." /> -->
+						<Input style="width:300px;" size="large" search v-model="search" @on-change="searchOn" placeholder="Search..." />
+                    </div>
+                    <!-- <div class="notify_icon">
+                        <Icon type="md-notifications-outline" />
+                        <span class="num">2</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+		<div class="row justify-content-between">
+            <div class="col-md-6">
+                <div class="designation">
+                    <Button @click="addModalOn" type="info">Add New Product</Button>
+                </div>
+            </div>
+        </div>
+		<div class="_table_all"> 
+            <div class="_table_main">
+                <table class="_1table"> 
+                        <thead>
+                            <tr>
+                                <th>Product Id</th>
+								<th>Product Name</th>
+								<th>Product Image</th>
+								<th>Description</th>
+								<th>Action</th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                            <tr v-for="(product,index) in products" :key="product.id">
+										<td>{{index+1}}</td>
+										<!-- <td>{{product.id}}</td> -->
+										<td >{{product.name}}</td>
+										<td @click="viewImage(product)"><Button>show</Button></td>
+										<td><Button @click="viewItem(product)" class="_btn _action_btn edit_btn1" type="info">Details</Button> </td>
+										<td>
+											<span class="_pointer" @click="editProduct(product,index)"><i class="fas fa-edit"></i></span>
+                                            <span class="_pointer_red" @click="deleteProduct(product.id,index)" ><i class="fas fa-trash-alt"></i></span>
+										</td>
+									</tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+		<!-- <div class="content"> 
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-12">
@@ -12,13 +66,10 @@
 								</div>
 							 </div>
                         </div>
-						<!--~~~~~~~ TABLE ONE ~~~~~~~~~-->
 						<div class="_1adminOverveiw_table_recent _box_shadow _border_radious  _p20">
 							<div class="_overflow _table_div">
 								<table class="_table" style="width:100%">
-										<!-- TABLE TITLE -->
 									<tr style="background: #5ea1ce;" > 
-										<!-- <th>Num</th> -->
 										<th>Product Id</th>
 										<th>Product Name</th>
 										<th>Product Image</th>
@@ -26,7 +77,7 @@
 										<th>Action</th>
 									</tr>
 									<tr v-for="(product,index) in products" :key="product.id">
-										<!-- <td>{{index+1}}</td> -->
+										
 										<td>{{product.id}}</td>
 										<td >{{product.name}}</td>
 										<td @click="viewImage(product)"><Button>show</Button></td>
@@ -42,7 +93,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- start show detail modal -->
 		<Modal
 			v-model="imageModal"

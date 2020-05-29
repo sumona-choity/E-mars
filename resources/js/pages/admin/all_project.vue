@@ -85,7 +85,6 @@
                             </tr>
                         </tbody>
                 </table>
-            <!---=== row list attendance END ===---->
             </div>
         </div>
         <!---=== table right side END ====---->

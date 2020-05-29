@@ -34,26 +34,7 @@
                                                   Product lists
                                               </router-link>
                                           </MenuItem>
-                                          <!-- <MenuItem name="/seller/user_attendance">
-                                            <router-link to="/seller/user_attendance">
-                                                  Attendance
-                                              </router-link>
-                                          </MenuItem>
-                                          <MenuItem name="/my_task">
-                                            <router-link to="/my_task">
-                                                  My tasks
-                                              </router-link>
-                                          </MenuItem>
-                                          <MenuItem name="/user_Daily_task">
-                                            <router-link to="/user_Daily_task">
-                                                  Daily Based Task
-                                              </router-link>
-                                          </MenuItem>
-                                          <MenuItem name="/emp_run_pro">
-                                            <router-link to="/emp_run_pro">
-                                                My Projects
-                                              </router-link>
-                                          </MenuItem> -->
+                                          
                                       </MenuGroup>
                                   </Menu>
                           </div>

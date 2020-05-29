@@ -9,7 +9,7 @@
                     <div>
                       <div class="left_sidebar">
                           <div class="logo" v-if="isLoggedIn">
-                              <p class="logo_p1">AppifyLab</p>
+                              <p class="logo_p1">E-mars</p>
                               <div class="logo-img"><img :src="authUser.image_link" alt="" class="logo_i.mg"></div>
                               <p class="logo_p2">{{authUser.name}}</p>
                               <a href="/logout"><Button type="info" size="large" class="logo_btn">Log out</Button></a>
@@ -24,7 +24,7 @@
                                                   Dashboard
                                               </router-link>    
                                           </MenuItem>
-                                          <MenuItem name="/profile">
+                                          <!-- <MenuItem name="/profile">
                                             <router-link to="/profile">
                                                   Profile
                                               </router-link>
@@ -48,7 +48,7 @@
                                             <router-link to="/emp_run_pro">
                                                 My Projects
                                               </router-link>
-                                          </MenuItem>
+                                          </MenuItem> -->
                                       </MenuGroup>
                                   </Menu>
                           </div>

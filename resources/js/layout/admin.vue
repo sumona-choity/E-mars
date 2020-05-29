@@ -9,7 +9,7 @@
                     <div>
                       <div class="left_sidebar">
                           <div class="logo">
-                              <p class="logo_p1">AppifyLab</p>
+                              <p class="logo_p1">E-mars</p>
                               <div class="logo-img"><img src="/img/1.png" alt="" class="logo_i.mg"></div>
                               <!-- <p class="logo_p2">Dilruba Ferdous</p>
                               <p class="logo_p3">Front End Developer</p> -->
@@ -27,7 +27,7 @@
                                     Dashboard
                                 </router-link>    
                             </MenuItem>
-                            <MenuItem name="/admin/emp_profile">
+                            <!-- <MenuItem name="/admin/emp_profile">
                                <router-link to="/admin/emp_profile">
                                     Employee Profile
                                 </router-link>
@@ -47,13 +47,13 @@
                                <router-link to="/admin/attendance">
                                     Employee Attendance
                                 </router-link>
-                            </MenuItem>
-                            <!-- <MenuItem name="/admin/add_project">
+                            </MenuItem> 
+                             <MenuItem name="/admin/add_project">
                                 <router-link to="/admin/add_project">
                                     Projects
                                 </router-link>
                             </MenuItem> -->
-                            <MenuItem name="/admin/all_project">
+                            <!-- <MenuItem name="/admin/all_project">
                                 <router-link to="/admin/all_project">
                                   All project
                                 </router-link>
@@ -82,7 +82,7 @@
                                 <router-link to="/admin/completed_project">
                                     Completed project
                                 </router-link>
-                            </MenuItem>
+                            </MenuItem> -->
                         </MenuGroup>
                     </Menu>
             </div>
